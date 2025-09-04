@@ -1,0 +1,101 @@
+.collection {
+  padding: 60px 40px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.collection-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+/* ===== GRID ===== */
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Tablet screen  */
+@media (max-width: 1024px) {
+  .collection-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Mobile screen  */
+@media (max-width: 768px) {
+  .collection-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.collection-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.collection-card:hover {
+  transform: translateY(-5px);
+}
+
+.collection-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.collection-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.star {
+  font-size: 16px;
+}
+
+.rating-text {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Price */
+.price {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+
+.collection-btn {
+  margin-top: 40px;
+  padding: 12px 30px;
+  font-size: 15px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.collection-btn:hover {
+  background-color: #333;
+}
