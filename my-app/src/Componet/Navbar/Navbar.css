@@ -123,8 +123,14 @@
   .navbar-links li {
     width: auto;
   }
+  .navbar-links li a{
+    gap: 25px;
+    color: rgb(79, 30, 122);
+  }
 
-  .navbar-search {
+
+  .navbar-search,
+  .search-icon {
     display: none !important;
   }
 
