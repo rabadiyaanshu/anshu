@@ -125,9 +125,7 @@
   }
 
   .navbar-search {
-    width: 120px; 
-    padding: 5px 25px;
-    font-size: 14px;
+    display: none !important;
   }
 
   .menu-toggle {
