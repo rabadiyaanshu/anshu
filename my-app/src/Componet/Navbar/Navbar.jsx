@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { FaUserCircle, FaShoppingCart } from "react-icons/fa";
+import { FaUserCircle, FaShoppingCart, FaSearch  } from "react-icons/fa";
 import { FiMenu, FiX } from "react-icons/fi";
 
 export default function Navbar() {
@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       
-      <div className="navbar-logo">MyShop</div>
+      <div className="navbar-logo">Shop.CO</div>
 
    
       <div className={`navbar-center ${menuOpen ? "active" : ""}`}>
@@ -19,7 +19,10 @@ export default function Navbar() {
           <li><a href="/about">About</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
-        <input type="text" placeholder="Search..." className="navbar-search" />
+           <div className="navbar-search-wrapper">
+          <FaSearch className="search-icon" />
+          <input type="text" placeholder="Search..." className="navbar-search" />
+        </div>
       </div>
 
      
