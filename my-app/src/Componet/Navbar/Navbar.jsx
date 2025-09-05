@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       
-      <div className="navbar-logo">Shop.CO</div>
+      <div className="navbar-logo">SHOP.CO</div>
 
    
       <div className={`navbar-center ${menuOpen ? "active" : ""}`}>
