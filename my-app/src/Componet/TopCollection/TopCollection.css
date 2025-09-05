@@ -10,7 +10,7 @@
   margin-bottom: 40px;
 }
 
-/* Default: Desktop (4 per row) */
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -89,14 +89,14 @@
   background: #444;
 }
 
-/* 📱 Mobile (max 768px)  */
+/*  Mobile (max 768px)  */
 @media (max-width: 768px) {
   .product-grid {
     grid-template-columns: 1fr;
   }
 }
 
-/* 📲 Tablet (769px - 1024px)  */
+/*  Tablet (769px - 1024px)  */
 @media (min-width: 769px) and (max-width: 1024px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
